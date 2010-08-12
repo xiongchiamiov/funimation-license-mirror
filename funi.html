@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Funimation license mirror</title>
+	<style type="text/css">
+		body {
+			color: #ddd;
+			background-color: #222;
+			font-family: Tahoma, Geneva, "Trebuchet MS", sans-serif;
+			margin-left: 10%;
+			margin-right: 10%;
+			line-height: 1.6;
+		}
+		a {
+			color: #AFB8DE;
+		}
+		a:visited {
+			color: #C7AFDE;
+		}
+		p, #entries {
+			border: 2px dashed #444;
+			padding: 1em;
+		}
+		#entries {
+			list-style: none;
+		}
+		#entries li {
+			margin: 0;
+			margin-bottom: 1em;
+		}
+	</style>
+</head>
+<body>
+	<p>
+		This is a mirror of Funimation's licensing page, located at <a
+		href="http://funimation.com/f_index.cfm?page=copy">
+		http://funimation.com/f_index.cfm?page=copy</a>. While it is, in my
+		humble opinion, easier to read, the primary purpose of this page is to
+		provide access to a listing of Funimation's licensed anime to those
+		outside of the United States, as they are geo-blocked.
+	</p>
+	<p>
+		I make no claim of ownership for this text. While I can't imagine anyone
+		having issue with this, if you are an employee of Funimation and wish to
+		have this removed, please <a href="http://changedmy.name/about/contact.html">
+		contact me</a>.
+	</p>
+	<ul id="entries">
+	{% for entry in entries %}
+		<li>{{ entry }}</li>
+	{% endfor %}
+	</ul>
+</body>
+</html>
